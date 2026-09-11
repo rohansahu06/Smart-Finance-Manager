@@ -1,9 +1,13 @@
+"use client"
 import React from 'react'
+import './Hero_01.css'
 
 const Hero_01 = () => {
   return (
     <div>
-        Hello this is hero page 01
+       <div className='Hero_page01'>
+        
+       </div>
       
     </div>
   )
