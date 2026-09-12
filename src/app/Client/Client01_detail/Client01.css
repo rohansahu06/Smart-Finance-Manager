@@ -1,0 +1,65 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.credit-page {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f8;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+.credit-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  max-width: 900px;
+  gap: 20px;
+}
+.credit-img {
+  flex: 1;
+  min-height: 250px;
+  border-radius: 12px;
+  background-image: url("https://www.lloydsbankinggroup.com/assets/images/who-we-are/strategy/strategy-purpose-2025-promo-2.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.credit-info {
+  flex: 2;
+}
+
+.credit-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.credit-info p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .credit-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .credit-img {
+    width: 100%;
+    min-height: 200px;
+  }
+}

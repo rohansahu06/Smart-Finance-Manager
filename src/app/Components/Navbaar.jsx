@@ -1,19 +1,24 @@
+"use client"
 import React from 'react'
+import Link from "next/link"
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './Navbaar.css'
 
 const Navbaar = () => {
   return (
-<div class="navbar">
-  <div class="logo"><i class="fa-solid fa-building-columns"></i> MyBank</div>
-  <div class="nav-links">
-    <button><i class="fa-solid fa-circle-info"></i> About</button>
-    <button><i class="fa-solid fa-briefcase"></i> Services</button>
-    <button><i class="fa-solid fa-user-group"></i> Client</button>
-    <button><i class="fa-solid fa-sitemap"></i> Subsidiaries</button>
-    <button><i class="fa-solid fa-city"></i> Corporate</button>
-    <button><i class="fa-solid fa-comments"></i> Feedback</button>
-  </div>
-</div>
+    <div className="navbar">
+      <div className="logo">
+        <i className="fa-solid fa-building-columns"></i> MyBank
+      </div>
+      <div className="nav-links">
+        <Link href="/Services"><button><i className="fa-solid fa-file-contract"></i>  Service</button></Link>
+        <Link href="/Client"><button><i className="fa-solid fa-users"></i>Client</button></Link>
+        <Link href="/Subsidy"><button><i className="fa-solid fa-sitemap"></i> Subsidiaries</button></Link>
+        <Link href="/Feedback"><button><i className="fa-solid fa-comments"></i> Feedback</button></Link>
+        <Link href="/About"><button><i className="fa-solid fa-circle-info"></i> About</button>
+        </Link><Link href="/"><button><i className="fa-solid fa-house"></i> Home</button></Link>
+      </div>
+    </div>
   )
 }
 
