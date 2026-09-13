@@ -3,7 +3,7 @@ import React from 'react'
 export default function page() {
   return (
     <div>
-             Hello this is susidy page 
+    this is a login page 
       
     </div>
   )

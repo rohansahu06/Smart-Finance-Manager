@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import "./Client01.css"; 
+import "./Clientstyle.css"; 
 
 
 export default function Page() {
@@ -21,5 +21,6 @@ export default function Page() {
         </div>
       </div>
     </div>
+    
   );
 }

@@ -1,10 +1,20 @@
-#heading{
+#Heading{
     margin-top: 20px;
+    font-size: clamp(24px, 4vw, 30px);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #2c3e50;   
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
+    background: linear-gradient(90deg, #004aad, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
 }
+body{background-color: beige;}
 /* Customer list 01 start from Here */
 .cust_list-01 {
     height: 300px;
@@ -21,7 +31,7 @@
 }
 #client1 {
     height: 250px;
-    width: 259px;
+    width: 300px;
     border-radius: 15px;
     background-image: url("https://www.lloydsbankinggroup.com/assets/images/who-we-are/strategy/strategy-purpose-2025-promo-2.jpg");
     background-repeat: no-repeat;
@@ -42,8 +52,8 @@
   font-size: 18px; text-align: center; padding: 8px 0;
 }
 #client2 {
-   height: 250px;
-    width: 259px;
+    height: 250px;
+    width: 300px;
     background-color: violet;
     border-radius: 15px;
     background-image: url("https://static.vecteezy.com/system/resources/previews/050/611/345/non_2x/a-businessman-in-a-blue-suit-shakes-the-hand-of-a-new-employee-while-colleagues-stand-around-them-all-of-the-individuals-are-smiling-and-seem-to-be-enjoying-the-moment-photo.jpg");
@@ -66,7 +76,7 @@
 }
 #client3 {
     height: 250px;
-    width: 259px;
+    width: 300px;
     background-color: green;
     border-radius: 15px;
     background-image: url("https://thumbs.dreamstime.com/b/happy-indian-young-man-company-employee-working-laptop-portrait-business-professional-manager-office-worker-programmer-254112864.jpg");
@@ -89,7 +99,7 @@
 }
 #client4 {
    height: 250px;
-    width: 259px;
+    width: 300px;
     background-color: green;
     border-radius: 15px;
     background-image: url("https://cdn.pixabay.com/photo/2024/02/21/14/53/ai-generated-8587845_1280.png");
@@ -130,7 +140,7 @@
 }
 #client5 {
     height: 250px;
-    width: 259px;
+    width: 300px;
     border-radius: 15px;
     background-image: url("https://img.freepik.com/premium-photo/coaching-motivation-happy-proud-business-leader-meeting-with-diverse-colleagues-office-portrait-male-smiling-training-with-workers-discussing-improvement-strategy-planning_590464-81771.jpg");
     background-repeat: no-repeat;
@@ -152,7 +162,7 @@
 }
 #client6 {
    height: 250px;
-    width: 259px;
+    width: 300px;
     background-color: violet;
     border-radius: 15px;
     background-image: url("https://thumbs.dreamstime.com/z/portrait-indian-farmer-corn-field-harvest-portrait-indian-farmer-wearing-striped-shirt-checkered-headscarf-288687517.jpg");
@@ -175,7 +185,7 @@
 }
 #client7 {
     height: 250px;
-    width: 259px;
+    width: 300px;;
     background-color: green;
     border-radius: 15px;
     background-image: url("https://t4.ftcdn.net/jpg/05/95/55/89/360_F_595558921_z1JnF4ieH75XlWoDPuh1Os97QkPnb4dx.jpg");
@@ -198,7 +208,7 @@
 }
 #client8 {
    height: 250px;
-    width: 259px;
+    width: 300px;
     background-color: green;
     border-radius: 15px;
     background-image: url("https://images.yourstory.com/cs/5/f02aced0d86311e98e0865c1f0fe59a2/indian-farmer-1610471656527.png?w=1152&fm=auto&ar=2:1&mode=crop&crop=faces");
@@ -228,13 +238,12 @@
     margin-top: 40px;
     flex-wrap: wrap; 
     gap: 20px; 
-    margin-top: 40px;
     padding: 20px;
     background-color: beige;
 }
 #client9 {
     height: 250px;
-    width: 259px;
+    width: 300px;
     border-radius: 15px;
     background-image: url("https://img.freepik.com/premium-photo/indian-farmer-women-field-with-their-thumbs-up-with-cute-smile_862994-623791.jpg?w=2000om/assets/images/who-we-are/strategy/strategy-purpose-2025-promo-2.jpg");
     background-repeat: no-repeat;
@@ -255,7 +264,7 @@
 }
 #client10 {
    height: 250px;
-    width: 259px;
+    width: 300px;;
     background-color: violet;
     border-radius: 15px;
     background-image: url("https://static.vecteezy.com/system/resources/previews/038/451/514/large_2x/ai-generated-indian-female-farmer-working-in-her-field-bokeh-style-background-with-generative-ai-photo.jpeg");
@@ -277,7 +286,7 @@
 }
 #client11 {
     height: 250px;
-    width: 259px;
+    width: 300px;;
     background-color: green;
     border-radius: 15px;
     background-image: url("https://st5.depositphotos.com/16337376/63799/i/1600/depositphotos_637996214-stock-photo-happy-indian-farmer-green-card.jpgg");
@@ -299,10 +308,10 @@
 }
 #client12 {
    height: 250px;
-    width: 259px;
+    width: 300px;
     background-color: green;
     border-radius: 15px;
-    background-image: url("https://c8.alamy.com/comp/2PP4YBG/young-indian-farmer-showing-smart-phone-farmer-talking-on-phone-in-farm-happy-indian-farmer-2PP4YBG.jpg");
+    background-image: url("https://www.atlanticcouncil.org/wp-content/uploads/2020/09/An-Indian-farmer-in-a-field-scaled.jpg");
     background-repeat: no-repeat;
     background-size: cover; background-position: center;box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
     overflow: hidden;position: relative;

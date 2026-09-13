@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.credit-page {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f8;
+  min-height: 100vh;
+  padding: 20px;
+}
+.heading {
+  text-align: center;
+  font-size: clamp(24px, 4vw, 32px); 
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+.credit-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  max-width: 900px;
+  gap: 20px;
+  transition: transform 0.3s ease; 
+}
+.credit-card:hover {
+  transform: translateY(-5px);
+}
+
+.credit-img {
+  flex: 1;
+  min-height: 250px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.credit-info {
+  flex: 2;
+}
+
+.credit-info h2 {
+  font-size: clamp(18px, 2.5vw, 24px);
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.credit-info p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: clamp(14px, 2vw, 16px);
+}
+@media (max-width: 1024px) {
+  .credit-card {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .credit-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .credit-img {
+    width: 100%;
+    min-height: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .heading {
+    font-size: 22px;
+  }
+  .credit-info h2 {
+    font-size: 18px;
+  }
+  .credit-info p {
+    font-size: 14px;
+  }
+}
+.priya {
+  background-image: url("https://www.lloydsbankinggroup.com/assets/images/who-we-are/strategy/strategy-purpose-2025-promo-2.jpg");
+}
+.krishna {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/050/611/345/non_2x/a-businessman-in-a-blue-suit-shakes-the-hand-of-a-new-employee-while-colleagues-stand-around-them-all-of-the-individuals-are-smiling-and-seem-to-be-enjoying-the-moment-photo.jpgps://static.vecteezy.com/system/resources/previews/050/611/345/non_2x/a-businessman-in-a-blue-suit-shakes-the-hand-of-a-new-employee.jpg");
+}
+.ram {
+  background-image: url("https://thumbs.dreamstime.com/b/happy-indian-young-man-company-employee-working-laptop-portrait-business-professional-manager-office-worker-programmer-254112864.jpg");
+}
+.abhinav { background-image: url("https://cdn.pixabay.com/photo/2024/02/21/14/53/ai-generated-8587845_1280.png"); }
+.abhijeet { background-image: url("https://img.freepik.com/premium-photo/coaching-motivation-happy-proud-business-leader.jpg"); }
+.sukhdev { background-image: url("https://thumbs.dreamstime.com/z/portrait-indian-farmer-corn-field-harvest-portrait-indian-farmer-wearing-striped-shirt-checkered-headscarf-288687517.jpg"); }
+.ramnath { background-image: url("https://t4.ftcdn.net/jpg/05/95/55/89/360_F_595558921_z1JnF4ieH75XlWoDPuh1Os97QkPnb4dx.jpg"); }
+.devi { background-image: url("https://images.yourstory.com/cs/5/f02aced0d86311e98e0865c1f0fe59a2/indian-farmer-1610471656527.png?w=1152&fm=auto&ar=2:1&mode=crop&crop=face"); }
+.dhanbai { background-image: url("https://img.freepik.com/premium-photo/indian-farmer-women-field-with-their-thumbs-up-with-cute-smile_862994-623791.jpg?w=2000om/assets/images/who-we-are/strategy/strategy-purpose-2025-promo-2.jpg"); }
+.gaytri { background-image: url("https://static.vecteezy.com/system/resources/previews/038/451/514/large_2x/ai-generated-indian-female-farmer-working-in-her-field-bokeh-style-background-with-generative-ai-photo.jpeg"); }
+.rajesh { background-image: url("https://st5.depositphotos.com/16337376/63799/i/1600/depositphotos_637996214-stock-photo-happy-indian-farmer-green-card.jpg"); }
+.iswar { background-image: url("https://www.atlanticcouncil.org/wp-content/uploads/2020/09/An-Indian-farmer-in-a-field-scaled.jpg"); }
+
+
