@@ -18,7 +18,7 @@ body{background-color: beige;}
     -webkit-text-fill-color: transparent;
     text-align: center;
 }
-.service-01 {
+.loan-01{
     height: 250px;
     width: 100%; 
     display: flex;
@@ -30,11 +30,10 @@ body{background-color: beige;}
     padding: 25px;
   
 }
-#serv-box01,#serv-box02,#serv-box03 {
+#loan-box01,#loan-box02,#loan-box03 {
     width: 420px;
     height: 250px;
     border-radius: 15px;
-  
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -44,18 +43,20 @@ body{background-color: beige;}
     transition: transform 0.3s, box-shadow 0.3s;
    
 }
-.service-02 {
+.loan-02 {
     height: 300px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 40px;
+    margin-bottom: 20px;
     flex-wrap: wrap; 
     gap: 20px; 
     padding: 25px;
+
 }
-#serv-box04,#serv-box05,#serv-box06{
+#loan-box04,#loan-box05,#loan-box06{
     height: 250px;
     width: 420px;
     border-radius: 15px;
@@ -65,19 +66,14 @@ body{background-color: beige;}
     transition: transform 0.3s, box-shadow 0.3s;
     flex: 1 1  250px; 
 }
-#serv-box01{
-      background-image: url("https://www.cumanagement.com/sites/default/files/2019-04/deposit-bag-bank.jpg");
-
-}
-#serv-box02{background-image: url("https://5.imimg.com/data5/SELLER/Default/2023/7/328821747/JS/FT/CR/162283999/2-bank-loan-500x500.jpg");}
-#serv-box03{background-image: url("https://mi-blogs.s3.amazonaws.com/mi-live/blog/wp-content/uploads/2024/11/20132312/What-Is-a-Payment-Service-Provider-Everything-You-Need-to-Know-1024x597.jpg");}
-#serv-box04{ background-image: url("https://static.vecteezy.com/system/resources/previews/011/942/739/non_2x/businessman-rebalancing-diversification-investment-on-3d-pie-graph-financial-allocation-investment-strategy-and-risk-management-on-portfolio-vector.jpg");}
-#serv-box05{background-image: url("https://www.skydo.com/_next/image?url=https:%2F%2Fskydo-assets.s3.ap-south-1.amazonaws.com%2FFactors_Influencing_Foreign_Exchange_Rate_Fluctuations_8ba0172013.jpg&w=1920&q=75");}
-#serv-box06{background-image: url("https://fluentforms.com/wp-content/uploads/2024/06/9-Best-Practices-for-Great-Customer-Service-1536x804.png");}
-
-#serv-box01:hover,#serv-box02:hover,#serv-box03:hover,
-#serv-box04:hover,#serv-box05:hover,#serv-box06:hover{
+#loan-box01:hover,#loan-box02:hover,#loan-box03:hover,
+#loan-box04:hover,#loan-box05:hover,#loan-box06:hover{
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
-
+#loan-box01{background-image: url("https://www.finznest.com/blog/wp-content/uploads/2025/03/Futute-of-Loan.webp");}
+#loan-box02{background-image: url("https://www.navabharathasahakari.com/wp-content/uploads/2021/09/education-loan-1-scaled.jpg");}
+#loan-box03{background-image: url("https://www.bajajfinservmarkets.in/content/dam/bajajmarkets/blog-assets/listing-pages/60-percent-top-banner/Gold%20Loan%20Repayment%20procedure.webp");}
+#loan-box04{ background-image: url("https://img.freepik.com/premium-photo/bank-loan-illustration-customer-apply-loan-this-illustration-can-be-use-website_1199132-159313.jpg?w=2000");}
+#loan-box05{background-image: url("https://tweakyourbiz.com/wp-content/uploads/2022/05/Small-Business-Loans-Online.jpg");}
+#loan-box06{background-image: url("https://moneyyojana.com/images/agri-loan.jpg");}

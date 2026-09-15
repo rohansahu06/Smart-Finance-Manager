@@ -1,0 +1,75 @@
+*{margin: 0;padding: 0;}
+.deposite-container-1{
+    height: 250px;
+    width: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap; 
+    gap: 30px; 
+    padding: 25px;
+}
+#Heading {
+    margin-top: 20px;
+    font-size: clamp(24px, 4vw, 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #2c3e50;   
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
+    background: linear-gradient(90deg, #004aad, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+#saving,#Fixed,#current{
+    width: 420px;
+    height: 250px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.deposite-container-2{
+    height: 250px;
+    width: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap; 
+    gap: 30px; 
+    padding: 25px;
+}
+#Govt-scheme,#Monthly_depo{
+    width: 420px;
+    height: 250px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#current{background-image: url("https://d6xcmfyh68wv8.cloudfront.net/blog-content/uploads/2023/02/Current-Account.jpg");}
+#saving{background-image: url("https://biznext.in/blog/wp-content/uploads/2024/10/Best-Bank-to-Open-Savings-Account-Online.webp");}
+#Fixed{background-image: url("https://rewaridccb.bank.in/upload/product/main/69cbf92606a43-FIX_DEPOSIT.JPG");}
+#Govt-scheme { background-image: url("https://govtschemesinfo.blog/wp-content/uploads/2025/10/NPS-Vatsalya-Scheme_-Financial-security-for-children-1024x683.png")}
+#Monthly_depo {background-image: url("https://www.caknowledge.in/wp-content/uploads/2019/07/Recurring-Deposit.jpg");}
+
+#current:hover,#Fixed:hover,#saving:hover,
+#Govt-scheme:hover,#Monthly_depo:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}

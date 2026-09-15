@@ -1,0 +1,81 @@
+#Heading {
+    margin-bottom: 30px;
+    font-size: clamp(24px, 4vw, 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #2c3e50;   
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
+    background: linear-gradient(90deg, #004aad, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.feedback {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  margin-top: 20px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  flex: 0 0 150px; /* fixed width for labels */
+  font-weight: bold;
+  color: #333;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.form-row input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.feedback-row {
+  align-items: flex-start; /* align textarea at top */
+}
+
+.feedback-row textarea {
+  flex: 1;
+  min-height: 150px; /* bigger size for feedback */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  font-size: 14px;
+}
+
+.feedback button {
+  width: 100%;
+  padding: 12px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.feedback button:hover {
+  background: #0056b3;
+}
