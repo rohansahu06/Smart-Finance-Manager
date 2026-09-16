@@ -50,7 +50,7 @@ body{background-color: beige;}
     justify-content: space-evenly;
     align-items: center;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     flex-wrap: wrap; 
     gap: 20px; 
     padding: 25px;
@@ -74,6 +74,6 @@ body{background-color: beige;}
 #loan-box01{background-image: url("https://www.finznest.com/blog/wp-content/uploads/2025/03/Futute-of-Loan.webp");}
 #loan-box02{background-image: url("https://www.navabharathasahakari.com/wp-content/uploads/2021/09/education-loan-1-scaled.jpg");}
 #loan-box03{background-image: url("https://www.bajajfinservmarkets.in/content/dam/bajajmarkets/blog-assets/listing-pages/60-percent-top-banner/Gold%20Loan%20Repayment%20procedure.webp");}
-#loan-box04{ background-image: url("https://img.freepik.com/premium-photo/bank-loan-illustration-customer-apply-loan-this-illustration-can-be-use-website_1199132-159313.jpg?w=2000");}
+#loan-box04{ background-image: url("https://static.vecteezy.com/system/resources/thumbnails/024/315/037/small_2x/health-insurance-healthcare-medical-services-hand-in-blue-glove-places-an-element-into-a-composition-with-medical-icons-visualizing-medical-insurance-virus-protection-illustration-vector.jpg");}
 #loan-box05{background-image: url("https://tweakyourbiz.com/wp-content/uploads/2022/05/Small-Business-Loans-Online.jpg");}
 #loan-box06{background-image: url("https://moneyyojana.com/images/agri-loan.jpg");}

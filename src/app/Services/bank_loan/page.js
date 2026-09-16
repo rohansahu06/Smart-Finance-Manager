@@ -13,7 +13,7 @@ export default function page() {
         
      </div>
       <div className='loan-01'>
-         <Link href="./bank_loan/Property_loan"><div id='loan-box04'></div></Link>
+         <Link href="./bank_loan/Health_insur"><div id='loan-box04'></div></Link>
           <Link href="./bank_loan/Bussiness_loan"><div id='loan-box05'></div></Link>
            <Link href="./bank_loan/Agri_loan"><div id='loan-box06'></div></Link>
       </div>

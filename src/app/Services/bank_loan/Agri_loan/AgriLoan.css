@@ -1,0 +1,62 @@
+.agriculture-loan-page {
+  background: linear-gradient(135deg, #d4fc79, #96e6a1); /* Light green gradient */
+  color: #333;
+  padding: 40px;
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.agriculture-loan-page h1 {
+  color: #2e7d32; /* Dark green heading */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section h2 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li {
+  background: rgba(46,125,50,0.1); /* light green shade */
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.highlight-box {
+  background: #f0fff0; /* light mint box */
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+#loan_request{
+  margin-left: 1000px;
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}

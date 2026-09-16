@@ -29,13 +29,11 @@
   align-items: center;
   margin-bottom: 20px;
 }
-
 .form-row label {
-  flex: 0 0 150px; /* fixed width for labels */
+  flex: 0 0 150px; 
   font-weight: bold;
   color: #333;
 }
-
 .form-row input {
   flex: 1;
   padding: 10px;
@@ -49,21 +47,18 @@
   border-color: #007BFF;
   outline: none;
 }
-
 .feedback-row {
-  align-items: flex-start; /* align textarea at top */
+  align-items: flex-start; 
 }
-
 .feedback-row textarea {
   flex: 1;
-  min-height: 150px; /* bigger size for feedback */
+  min-height: 150px; 
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
   resize: vertical;
   font-size: 14px;
 }
-
 .feedback button {
   width: 100%;
   padding: 12px;
@@ -75,7 +70,6 @@
   cursor: pointer;
   transition: background 0.3s;
 }
-
 .feedback button:hover {
   background: #0056b3;
 }

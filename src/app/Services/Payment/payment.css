@@ -1,0 +1,68 @@
+*{ margin: 0;
+    padding: 0;
+}
+body{background-color: beige;}
+#Heading {
+    margin-top: 20px;
+    font-size: clamp(24px, 4vw, 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #2c3e50;   
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
+    background: linear-gradient(90deg, #004aad, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.payment-01{
+    height: 250px;
+    width: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap; 
+    gap: 30px; 
+    padding: 25px;
+  
+}
+.payment-02 {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 25px;
+}
+#pay-box01,#pay-box02,#pay-box03,#pay-box04,#pay-box05 {
+    width: 420px;
+    height: 250px;
+    border-radius: 15px;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#pay-box01{background-image: url("https://myinvestmentideas.com/wp-content/uploads/2025/11/Digital-Payment-System-Trends-Every-Business-Should-Watch-This-Year-1.jpg");}
+#pay-box02{background-image: url("https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2016/11/8966256167_6ec3f08f0c_k.jpg");}
+#pay-box03{background-image: url("https://miro.medium.com/max/1280/1*TToahnoToF0qpgvtLSbK7w.png");}
+#pay-box04{ background-image: url("https://cdn.prod.website-files.com/64db80a5e88c6b1723ff7649/68b008416230fc211fb5610e_What%20are%20alternative%20payment%20methods%20(APMs)%20thumbnail.png");}
+#pay-box05{background-image: url("https://pix4free.org/assets/library/2021-09-29/originals/foreign-exchange.jpg5");}
+
+
+#pay-box01:hover,#pay-box02:hover,#pay-box03:hover,
+#pay-box04:hover,#pay-box05:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}

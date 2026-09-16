@@ -1,0 +1,62 @@
+.gold-loan-page {
+  background: linear-gradient(135deg, #fdfcfb, #e2d1c3); 
+  color: #333;
+  padding: 40px;
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.gold-loan-page h1 {
+  color: #b8860b; 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section h2 {
+  color: #b8860b;
+  margin-bottom: 10px;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li {
+  background: rgba(184,134,11,0.1); /* light golden shade */
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.highlight-box {
+  background: #fff8dc; /* light cream box */
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+#loan_request{
+  margin-left: 1000px;
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
