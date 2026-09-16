@@ -3,7 +3,7 @@ import React from 'react'
 export default function page() {
   return (
     <div>
-      traditional paymeent 
+      new age payment system buid by rohan sahu
     </div>
   )
 }
