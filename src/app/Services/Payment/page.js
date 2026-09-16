@@ -1,6 +1,6 @@
 import Link from "next/link"
 import React from 'react'
-import "./payment/payment.css";
+import "./payment.css";
 export default function page() {
   return (
       <div>
