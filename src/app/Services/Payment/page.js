@@ -1,6 +1,6 @@
 import Link from "next/link"
 import React from 'react'
-import "../payment/payment.css";
+import "./payment.css";
 export default function page() {
   return (
       <div>
@@ -11,10 +11,6 @@ export default function page() {
        <Link href="Payment/Digital_payment"><div id="pay-box03"></div></Link>
         
      </div>
-      <div className='payment-02'>
-         <Link href="Payment/NewAge_payment"><div id="pay-box04"></div></Link>
-          <Link href="Payment/foreign_exchange"><div id="pay-box05"></div></Link>
-      </div>
     </div>
     
   )

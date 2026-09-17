@@ -1,7 +1,57 @@
-.Hero_page01{
-    height: 600px;
-    width: 100%;
-    background-image: url(https://www.neopay.co.uk/wp-content/uploads/2023/06/PSD2-website.png);
-    background-repeat: no-repeat; background-size: cover; background-position: center;
-    overflow: hidden; position: relative; transition: transform 0.3s, box-shadow 0.3s; 
+*{ margin: 0;padding: 0;}
+.Heading {
+ height: 655px;
+ width: 100%;
+ background-color: beige;   
+}
+.service_01{
+    height: 250px;
+    width: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5px;
+    flex-wrap: wrap; 
+    gap: 30px; 
+    padding: 25px;
+  
+}
+.service_02{
+    height: 250px;
+    width: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap; 
+    gap: 30px; 
+    padding: 25px;
+  
+}
+#ser-box1,#ser-box2,#ser-box3,#ser-box4,#ser-box5{
+    width: 420px;
+    height: 250px;
+    border-radius: 15px;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#ser-box1{background-image: url("https://static.vecteezy.com/system/resources/previews/023/229/507/large_2x/online-deposit-concept-tiny-people-put-money-in-bank-safe-with-dollars-longterm-money-saving-finance-bank-account-banking-bank-security-safety-modern-flat-cartoon-style-illustration-vector.jpg");}
+#ser-box2{background-image: url("https://i.ytimg.com/vi/QTAqDU9b2Io/maxresdefault.jpg");}
+#ser-box3{background-image: url("https://www.lystloc.com/blog/wp-content/uploads/2022/11/blog44.webp");}
+#ser-box4{ background-image: url("https://img.freepik.com/premium-photo/bank-loan-illustration-customer-apply-loan-this-illustration-can-be-use-website_1199132-159313.jpg?w=2000");}
+#ser-box5{background-image: url("https://tse1.mm.bing.net/th/id/OIP.iytReIGwwfTEDBaXheVaHQHaEN?r=0&pid=Api&P=0&h=180");}
+.Heading{
+    background-image: url(https://www.slideteam.net/media/catalog/product/cache/1280x720/d/i/digitalising_customer_onboarding_optimizing_bank_customer_journey_through_ekyc_slide01.jpg);
+}
+
+#ser-box1:hover,#ser-box2:hover,#ser-box3:hover,
+#ser-box4:hover,#ser-box5:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }

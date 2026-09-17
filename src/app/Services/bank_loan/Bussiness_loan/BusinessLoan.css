@@ -1,5 +1,5 @@
 .business-loan-page {
-  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Simple grey + white */
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); 
   color: #333;
   padding: 40px;
   border-radius: 12px;
@@ -7,7 +7,7 @@
 }
 
 .business-loan-page h1 {
-  color: #2c3e50; /* Dark navy heading */
+  color: #2c3e50; 
   margin-bottom: 20px;
   text-align: center;
 }
@@ -33,14 +33,14 @@
 }
 
 .section ul li {
-  background: rgba(44,62,80,0.1); /* light navy shade */
+  background: rgba(44,62,80,0.1); 
   margin: 8px 0;
   padding: 10px;
   border-radius: 8px;
 }
 
 .highlight-box {
-  background: #ecf0f1; /* light grey box */
+  background: #ecf0f1; 
   color: #333;
   padding: 20px;
   border-radius: 10px;
