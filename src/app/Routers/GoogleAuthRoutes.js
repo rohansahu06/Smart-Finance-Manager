@@ -1,13 +1,7 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
 const passport = require("../Config/passport");
-
 const router = express.Router();
-
-
-// =====================================
-// GOOGLE LOGIN
-// =====================================
 
 router.get(
     "/google",
@@ -16,20 +10,13 @@ router.get(
     })
 );
 
-
-// =====================================
-// GOOGLE CALLBACK
-// =====================================
-
 router.get(
     "/google/callback",
     passport.authenticate("google", {
         session: false,
-        failureRedirect: "http://localhost:3000/login"
+        failureRedirect: "https://smart-finance-manager-c55t.onrender.com/login"
     }),
-
     (req, res) => {
-
         const token = jwt.sign(
             {
                 userId: req.user._id
@@ -39,12 +26,10 @@ router.get(
                 expiresIn: "1h"
             }
         );
-
         res.redirect(
-            `http://localhost:3000/?token=${token}`
+            `https://smart-finance-manager-c55t.onrender.com/?token=${token}`
         );
     }
 );
-
 
 module.exports = router;
