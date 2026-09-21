@@ -1,8 +1,202 @@
 *{ margin: 0;padding: 0;}
-.Heading {
- height: 655px;
- width: 100%;
- background-color: beige;   
+.hero-page {
+    width: 100%;
+    overflow: hidden;
+}
+.front-hero {
+    position: relative;
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(115deg, #04152b 0%, #062b4d 48%, #07547b 100%);
+    overflow: hidden;
+}
+.front-hero::before {
+    content: "";
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    right: -170px;
+    top: -210px;
+    border: 1px solid rgba(111, 208, 255, 0.18);
+    border-radius: 50%;
+    box-shadow: 0 0 100px rgba(47, 176, 239, 0.08);
+}
+.front-hero::after {
+    content: "";
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    right: 40px;
+    bottom: -300px;
+    border: 1px solid rgba(111, 208, 255, 0.13);
+    border-radius: 50%;
+}
+.front-hero-content {
+    position: relative;
+    z-index: 3;
+    width: min(1150px, 90%);
+    margin: auto;
+    padding: 90px 0;
+}
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    border: 1px solid rgba(111, 208, 255, 0.3);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.04);
+    color: #70d2ff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    backdrop-filter: blur(10px);
+}
+.hero-badge::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #62d0ff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #62d0ff;
+}
+.front-hero h1 {
+    max-width: 760px;
+    margin: 25px 0 22px;
+    color: #ffffff;
+    font-size: clamp(48px, 6vw, 76px);
+    font-weight: 700;
+    line-height: 1.03;
+    letter-spacing: -2px;
+}
+.front-hero h1 span {
+    display: block;
+    background: linear-gradient(90deg, #ffffff, #6bd3ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.front-hero-content > p {
+    max-width: 620px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 17px;
+    line-height: 1.8;
+}
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 34px;
+}
+.primary-btn,
+.secondary-btn {
+    min-width: 175px;
+    padding: 14px 23px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.primary-btn {
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    color: #07517a;
+}
+.primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+.secondary-btn {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.04);
+    color: #ffffff;
+    backdrop-filter: blur(8px);
+}
+.secondary-btn:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+.hero-stat-card {
+    position: absolute;
+    z-index: 3;
+    right: 9%;
+    bottom: 85px;
+    width: 280px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(18px);
+}
+.hero-stat-card span {
+    display: block;
+    margin-bottom: 12px;
+    color: #6dd1ff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.hero-stat-card strong {
+    display: block;
+    color: #ffffff;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+.hero-stat-card p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 13px;
+    line-height: 1.6;
+}
+@media (max-width: 900px) {
+    .front-hero {
+        min-height: 600px;
+    }
+    .hero-stat-card {
+        right: 5%;
+        bottom: 45px;
+        width: 240px;
+    }
+    .front-hero h1 {
+        max-width: 650px;
+    }
+}
+@media (max-width: 650px) {
+    .front-hero {
+        min-height: 680px;
+    }
+    .front-hero-content {
+        width: 88%;
+        padding: 65px 0;
+    }
+    .front-hero h1 {
+        margin-top: 20px;
+        font-size: 46px;
+        letter-spacing: -1.5px;
+    }
+    .front-hero-content > p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+    .hero-stat-card {
+        right: 6%;
+        bottom: 28px;
+        width: 88%;
+        padding: 18px 20px;
+    }
 }
 .service_01{
     height: 250px;
@@ -13,8 +207,7 @@
     margin-top: 5px;
     flex-wrap: wrap; 
     gap: 30px; 
-    padding: 25px;
-  
+    padding: 25px; 
 }
 .service_02{
     height: 250px;
@@ -26,7 +219,6 @@
     flex-wrap: wrap; 
     gap: 30px; 
     padding: 25px;
-  
 }
 #ser-box1,#ser-box2,#ser-box3,#ser-box4,#ser-box5{
     width: 420px;
@@ -46,9 +238,7 @@
 #ser-box3{background-image: url("https://www.lystloc.com/blog/wp-content/uploads/2022/11/blog44.webp");}
 #ser-box4{ background-image: url("https://img.freepik.com/premium-photo/bank-loan-illustration-customer-apply-loan-this-illustration-can-be-use-website_1199132-159313.jpg?w=2000");}
 #ser-box5{background-image: url("https://tse1.mm.bing.net/th/id/OIP.iytReIGwwfTEDBaXheVaHQHaEN?r=0&pid=Api&P=0&h=180");}
-.Heading{
-    background-image: url(https://www.slideteam.net/media/catalog/product/cache/1280x720/d/i/digitalising_customer_onboarding_optimizing_bank_customer_journey_through_ekyc_slide01.jpg);
-}
+.Heading{background-image: url(https://sbi.bank.in/documents/16012/52964925/CoE_Banner.png/9a92be1f-fdb2-2b03-fb0f-8d43a1f605fb?t=1769777774035);}
 
 #ser-box1:hover,#ser-box2:hover,#ser-box3:hover,
 #ser-box4:hover,#ser-box5:hover{

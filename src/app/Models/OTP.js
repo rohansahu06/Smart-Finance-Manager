@@ -5,12 +5,18 @@ const otpSchema = new mongoose.Schema(
         userId: {
             type: mongoose.Schema.Types.ObjectId,
             ref: "User",
-            required: true
+            required: false
+        },
+
+        email: {
+            type: String,
+            lowercase: true,
+            trim: true
         },
 
         purpose: {
             type: String,
-            enum: ["login", "deposit", "withdraw"],
+            enum: ["login", "register", "deposit", "withdraw"],
             required: true
         },
 
@@ -22,10 +28,25 @@ const otpSchema = new mongoose.Schema(
         expiresAt: {
             type: Date,
             required: true
+        },
+
+        registrationData: {
+            name: {
+                type: String
+            },
+
+            phone: {
+                type: String
+            },
+
+            password: {
+                type: String
+            }
         }
     },
     {
-        timestamps: true
+        timestamps: true,
+        collection: "OTPs"
     }
 );
 

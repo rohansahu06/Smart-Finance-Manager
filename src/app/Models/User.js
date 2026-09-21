@@ -16,17 +16,20 @@ const userSchema = new mongoose.Schema(
             trim: true
         },
 
-        phone: {
+      phone: {
             type: String,
-            required: true,
-            unique: true,
+            required: function () {
+            return this.authProvider === "local";
+    },
             trim: true
-        },
+},
 
-        password: {
+      password: {
             type: String,
-            required: true
-        },
+            required: function () {
+            return this.authProvider === "local";
+       }
+},
 
         googleId: {
             type: String,

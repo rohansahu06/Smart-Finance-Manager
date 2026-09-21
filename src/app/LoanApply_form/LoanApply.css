@@ -1,80 +1,139 @@
 .cont-parent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #e0f7fa, #ffffff);
-  min-height: 100vh;
-  padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    padding: 20px;
+    box-sizing: border-box;
 }
 .LoanApplyform {
-  background: #fff;
-  padding: 30px 40px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  width: 600px;
+    width: min(600px, 100%);
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-sizing: border-box;
 }
 #Heading {
-  text-align: center;
-  color: #2f80ed;
-  margin-bottom: 25px;
-  font-size: 22px;
-  font-weight: bold;
+    margin: 0 0 25px;
+    text-align: center;
+    color: #2f80ed;
+    font-size: 22px;
+    font-weight: bold;
 }
 .form-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
 }
 .form-row label {
-  flex: 1 0 100%;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #333;
+    flex: 1 0 100%;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
 }
 .form-row input {
-  flex: 1;
-  margin: 5px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  outline: none;
-  transition: border-color 0.3s;
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
 }
 .form-row input:focus {
-  border-color: #2f80ed;
+    border-color: #2f80ed;
 }
 .loanInfo {
-  margin-top: 20px;
+    width: 100%;
+    margin-top: 20px;
 }
 .loandiscription {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 8px;
+    display: block;
+    width: 100%;
+    min-height: 150px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 14px;
 }
-.loandiscription {
-  width: 550px;
-  height: 150px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  outline: none;
-}
-.loandiscription input:focus {
-  border-color: #2f80ed;
+.loandiscription:focus {
+    border-color: #2f80ed;
 }
 .submit-button {
-  background: #2f80ed;
-  color: #fff;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 20px;
-  width: 100%;
-  transition: background 0.3s;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #2f80ed;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    box-sizing: border-box;
 }
 .submit-button:hover {
-  background: #1b5e20; 
+    background: #1b5e20;
+}
+@media (max-width: 768px) {
+    .cont-parent {
+        padding: 18px;
+        align-items: flex-start;
+    }
+    .LoanApplyform {
+        padding: 25px;
+    }
+}
+@media (max-width: 480px) {
+    .cont-parent {
+        padding: 12px;
+    }
+    .LoanApplyform {
+        padding: 20px 16px;
+        border-radius: 10px;
+    }
+    #Heading {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .form-row {
+        margin-bottom: 12px;
+    }
+    .form-row input {
+        margin: 4px 0;
+        padding: 11px 10px;
+    }
+    .loanInfo {
+        margin-top: 16px;
+    }
+    .loandiscription {
+        min-height: 130px;
+    }
+    .submit-button {
+        margin-top: 16px;
+        padding: 12px;
+    }
+}
+@media (max-width: 340px) {
+    .cont-parent {
+        padding: 8px;
+    }
+    .LoanApplyform {
+        padding: 16px 12px;
+    }
+    #Heading {
+        font-size: 18px;
+    }
 }

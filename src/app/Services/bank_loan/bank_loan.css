@@ -1,37 +1,56 @@
-*{ margin: 0;
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{background-color: beige;}
+body {
+    background-color: beige;
+}
 #Heading {
     margin-top: 20px;
+    padding: 0 15px;
     font-size: clamp(24px, 4vw, 30px);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    color: transparent; 
-    letter-spacing: 1px; 
-    text-transform: uppercase; 
+    color: transparent;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     background: linear-gradient(90deg, #004aad, #00c6ff);
-    background-clip: text;   
+    background-clip: text;
+    -webkit-background-clip: text;
     text-align: center;
 }
-.loan-01{
-    height: 250px;
-    width: 100%; 
+.loan-01,
+.loan-02 {
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    flex-wrap: wrap; 
-    gap: 30px; 
+    flex-wrap: wrap;
+    gap: 30px;
     padding: 25px;
-  
 }
-#loan-box01,#loan-box02,#loan-box03 {
-    width: 420px;
+.loan-01 {
+    margin-top: 20px;
+}
+.loan-02 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+#loan-box01,
+#loan-box02,
+#loan-box03,
+#loan-box04,
+#loan-box05,
+#loan-box06 {
+    width: min(420px, 100%);
     height: 250px;
+    flex: 1 1 300px;
+    max-width: 420px;
     border-radius: 15px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,40 +58,91 @@ body{background-color: beige;}
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     overflow: hidden;
     position: relative;
-    transition: transform 0.3s, box-shadow 0.3s;
-   
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.loan-02 {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 40px;
-    margin-bottom: 50px;
-    flex-wrap: wrap; 
-    gap: 20px; 
-    padding: 25px;
-
+#loan-box01:hover,
+#loan-box02:hover,
+#loan-box03:hover,
+#loan-box04:hover,
+#loan-box05:hover,
+#loan-box06:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
-#loan-box04,#loan-box05,#loan-box06{
-    height: 250px;
-    width: 420px;
-    border-radius: 15px;
-    background-repeat: no-repeat;
-    background-size: cover; background-position: center;box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
-    overflow: hidden;position: relative;
-    transition: transform 0.3s, box-shadow 0.3s;
-    flex: 1 1  250px; 
+#loan-box01 {
+    background-image: url("https://www.finznest.com/blog/wp-content/uploads/2025/03/Futute-of-Loan.webp");
 }
-#loan-box01:hover,#loan-box02:hover,#loan-box03:hover,
-#loan-box04:hover,#loan-box05:hover,#loan-box06:hover{
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+#loan-box02 {
+    background-image: url("https://www.navabharathasahakari.com/wp-content/uploads/2021/09/education-loan-1-scaled.jpg");
 }
-#loan-box01{background-image: url("https://www.finznest.com/blog/wp-content/uploads/2025/03/Futute-of-Loan.webp");}
-#loan-box02{background-image: url("https://www.navabharathasahakari.com/wp-content/uploads/2021/09/education-loan-1-scaled.jpg");}
-#loan-box03{background-image: url("https://www.bajajfinservmarkets.in/content/dam/bajajmarkets/blog-assets/listing-pages/60-percent-top-banner/Gold%20Loan%20Repayment%20procedure.webp");}
-#loan-box04{ background-image: url("https://static.vecteezy.com/system/resources/thumbnails/024/315/037/small_2x/health-insurance-healthcare-medical-services-hand-in-blue-glove-places-an-element-into-a-composition-with-medical-icons-visualizing-medical-insurance-virus-protection-illustration-vector.jpg");}
-#loan-box05{background-image: url("https://tweakyourbiz.com/wp-content/uploads/2022/05/Small-Business-Loans-Online.jpg");}
-#loan-box06{background-image: url("https://moneyyojana.com/images/agri-loan.jpg");}
+#loan-box03 {
+    background-image: url("https://www.bajajfinservmarkets.in/content/dam/bajajmarkets/blog-assets/listing-pages/60-percent-top-banner/Gold%20Loan%20Repayment%20procedure.webp");
+}
+#loan-box04 {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/024/315/037/small_2x/health-insurance-healthcare-medical-services-hand-in-blue-glove-places-an-element-into-a-composition-with-medical-icons-visualizing-medical-insurance-virus-protection-illustration-vector.jpg");
+}
+#loan-box05 {
+    background-image: url("https://tweakyourbiz.com/wp-content/uploads/2022/05/Small-Business-Loans-Online.jpg");
+}
+#loan-box06 {
+    background-image: url("https://moneyyojana.com/images/agri-loan.jpg");
+}
+@media (max-width: 768px) {
+    .loan-01,
+    .loan-02 {
+        padding: 20px;
+        gap: 20px;
+    }
+    #loan-box01,
+    #loan-box02,
+    #loan-box03,
+    #loan-box04,
+    #loan-box05,
+    #loan-box06 {
+        width: 100%;
+        max-width: 500px;
+        flex: 1 1 100%;
+    }
+}
+@media (max-width: 480px) {
+    #Heading {
+        margin-top: 15px;
+        font-size: 22px;
+        line-height: 1.3;
+    }
+    .loan-01,
+    .loan-02 {
+        padding: 15px 12px;
+        gap: 18px;
+    }
+    .loan-01 {
+        margin-top: 15px;
+    }
+    .loan-02 {
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+    #loan-box01,
+    #loan-box02,
+    #loan-box03,
+    #loan-box04,
+    #loan-box05,
+    #loan-box06 {
+        height: 220px;
+        border-radius: 12px;
+    }
+}
+@media (max-width: 340px) {
+    .loan-01,
+    .loan-02 {
+        padding: 12px 8px;
+    }
+    #loan-box01,
+    #loan-box02,
+    #loan-box03,
+    #loan-box04,
+    #loan-box05,
+    #loan-box06 {
+        height: 200px;
+    }
+}

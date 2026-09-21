@@ -1,0 +1,581 @@
+/* ================================
+   COMMON
+================================ */
+
+.transaction-page {
+    min-height: 100vh;
+    padding: 60px 20px;
+    background: #f5f7fb;
+    box-sizing: border-box;
+}
+
+.verification-card,
+.account-card,
+.transaction-card,
+.history-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.verification-container {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verification-card {
+    width: 100%;
+    max-width: 460px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.verification-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.verification-header h1,
+.transaction-header h1,
+.account-card-header h2,
+.transaction-card h2,
+.history-header h2 {
+    color: #172033;
+}
+
+.verification-header h1 {
+    margin: 0 0 12px;
+    font-size: 30px;
+}
+
+.verification-header p,
+.transaction-header p {
+    margin: 0;
+    color: #697386;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+.verification-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label,
+.amount-section label {
+    color: #273043;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    border: 1px solid #d8dee9;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #172033;
+}
+
+.form-group input:focus,
+.amount-input:focus-within {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-group input::placeholder {
+    color: #9aa3b2;
+}
+
+.form-group input:disabled {
+    background: #f1f3f6;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+.verify-button,
+.back-button,
+.deposit-button,
+.withdraw-button {
+    height: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.verify-button,
+.deposit-button,
+.withdraw-button {
+    border: none;
+    color: #fff;
+}
+
+.verify-button {
+    background: #2563eb;
+}
+
+.verify-button:hover {
+    background: #1d4ed8;
+}
+
+.verify-button:disabled,
+.deposit-button:disabled,
+.withdraw-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.back-button {
+    border: 1px solid #d8dee9;
+    background: #fff;
+    color: #374151;
+}
+
+.back-button:hover {
+    background: #f5f7fb;
+}
+
+.verify-button:active,
+.back-button:active,
+.deposit-button:active,
+.withdraw-button:active {
+    transform: scale(0.98);
+}
+
+
+/* ================================
+   PAGE HEADER
+================================ */
+
+.transaction-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.transaction-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.transaction-header h1 {
+    margin: 0 0 10px;
+    font-size: 34px;
+}
+
+
+/* ================================
+   CARDS
+================================ */
+
+.account-card,
+.transaction-card,
+.history-card {
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+
+/* ================================
+   ACCOUNT
+================================ */
+
+.account-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.small-title {
+    margin: 0 0 8px;
+    color: #7b8495;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.account-card-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.balance-box {
+    min-width: 220px;
+    padding: 18px 22px;
+    border-radius: 14px;
+    background: #f1f5ff;
+    text-align: right;
+}
+
+.balance-box p {
+    margin: 0 0 5px;
+    color: #697386;
+    font-size: 13px;
+}
+
+.balance-box h2 {
+    margin: 0;
+    color: #2563eb;
+    font-size: 26px;
+}
+
+.account-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-top: 25px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f8f9fc;
+}
+
+.detail-item span {
+    color: #7b8495;
+    font-size: 12px;
+}
+
+.detail-item strong {
+    color: #273043;
+    font-size: 14px;
+    word-break: break-word;
+}
+
+
+/* ================================
+   TRANSACTION
+================================ */
+
+.transaction-card h2,
+.history-header h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.amount-section {
+    margin: 25px 0;
+}
+
+.amount-section label {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.amount-input {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    border: 1px solid #d8dee9;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.amount-input span {
+    width: 55px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f7fb;
+    color: #2563eb;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.amount-input input {
+    flex: 1;
+    height: 100%;
+    padding: 0 15px;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    color: #172033;
+}
+
+.amount-input input::-webkit-outer-spin-button,
+.amount-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.amount-input input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.transaction-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.deposit-button,
+.withdraw-button {
+    height: 52px;
+}
+
+.deposit-button {
+    background: #16a34a;
+}
+
+.deposit-button:hover {
+    background: #15803d;
+}
+
+.withdraw-button {
+    background: #dc2626;
+}
+
+.withdraw-button:hover {
+    background: #b91c1c;
+}
+
+
+/* ================================
+   HISTORY
+================================ */
+
+.history-header {
+    margin-bottom: 20px;
+}
+
+.transaction-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 17px 0;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.transaction-row:last-child {
+    border-bottom: 0;
+}
+
+.transaction-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.transaction-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.deposit-icon {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.withdraw-icon {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.transaction-info h3 {
+    margin: 0 0 5px;
+    color: #273043;
+    font-size: 15px;
+}
+
+.transaction-info p {
+    margin: 0;
+    color: #8a93a3;
+    font-size: 12px;
+}
+
+.deposit-amount,
+.withdraw-amount {
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.deposit-amount {
+    color: #16a34a;
+}
+
+.withdraw-amount {
+    color: #dc2626;
+}
+
+.no-transactions {
+    padding: 35px 20px;
+    border-radius: 10px;
+    background: #f8f9fc;
+    color: #7b8495;
+    font-size: 14px;
+    text-align: center;
+}
+
+.transaction-loading {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #697386;
+    font-size: 16px;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 768px) {
+
+    .transaction-page {
+        padding: 40px 15px;
+    }
+
+    .verification-container {
+        min-height: calc(100vh - 80px);
+    }
+
+    .verification-card {
+        padding: 30px 25px;
+    }
+
+    .transaction-header h1 {
+        font-size: 28px;
+    }
+
+    .account-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .balance-box {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .account-details,
+    .transaction-buttons {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+    .transaction-page {
+        padding: 25px 12px;
+    }
+
+    .verification-card {
+        padding: 25px 20px;
+        border-radius: 14px;
+    }
+
+    .verification-header h1 {
+        font-size: 25px;
+    }
+
+    .verification-header p {
+        font-size: 14px;
+    }
+
+    .transaction-header {
+        margin-bottom: 25px;
+    }
+
+    .transaction-header h1 {
+        font-size: 25px;
+    }
+
+    .account-card,
+    .transaction-card,
+    .history-card {
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    .account-card-header h2 {
+        font-size: 21px;
+    }
+
+    .balance-box h2 {
+        font-size: 22px;
+    }
+
+    .transaction-card h2,
+    .history-header h2 {
+        font-size: 19px;
+    }
+
+    .transaction-row {
+        align-items: flex-start;
+    }
+
+    .transaction-info {
+        gap: 10px;
+    }
+
+    .transaction-icon {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        font-size: 17px;
+    }
+
+    .transaction-info h3 {
+        font-size: 13px;
+    }
+
+    .transaction-info p {
+        font-size: 11px;
+    }
+
+    .deposit-amount,
+    .withdraw-amount {
+        font-size: 13px;
+    }
+}

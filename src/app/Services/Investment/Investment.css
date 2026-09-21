@@ -1,55 +1,523 @@
-.investment-section {
-  max-width: 1100px;
-  margin: 60px auto;
-  padding: 50px;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.investment-page {
+    width: 100%;
+    min-height: 100vh;
+    background: #f7f9fc;
+    color: #172033;
+    overflow-x: hidden;
 }
 
-.investment-section h2 {
-  text-align: center;
-  font-size: 32px;
-  color: #2f80ed;
-  margin-bottom: 20px;
-  font-weight: bold;
+.investment-hero {
+    position: relative;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(110deg, #051937, #093a69, #105b8c);
+    overflow: hidden;
 }
 
-.investment-section p {
-  text-align: center;
-  font-size: 17px;
-  color: #555;
-  margin-bottom: 40px;
+.investment-hero::before {
+    content: "";
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    right: -150px;
+    top: -180px;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 50%;
+}
+
+.investment-hero::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: 30px;
+    bottom: -260px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 50%;
+}
+
+.investment-hero-content {
+    position: relative;
+    z-index: 2;
+    width: min(1150px, 90%);
+    margin: auto;
+    padding: 80px 0;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 30px;
+    color: #8ed8ff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.investment-hero h1 {
+    max-width: 720px;
+    margin: 0;
+    color: #fff;
+    font-size: clamp(42px,6vw,72px);
+    line-height: 1.05;
+}
+
+.investment-hero h1 span {
+    display: block;
+    color: #62c8ff;
+}
+
+.investment-hero p {
+    max-width: 650px;
+    margin: 25px 0 32px;
+    color: rgba(255,255,255,.78);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .25s ease;
+}
+
+.primary-btn {
+    border: 0;
+    background: #fff;
+    color: #075b91;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.secondary-btn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.35);
+}
+
+.secondary-btn:hover {
+    background: rgba(255,255,255,.1);
+}
+
+.investment-intro {
+    padding: 90px 20px 60px;
+    background: #fff;
+}
+
+.section-heading {
+    width: min(760px,100%);
+    margin: auto;
+    text-align: center;
+}
+
+.section-heading > span,
+.small-heading {
+    color: #0879bd;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    margin: 12px 0 18px;
+    font-size: clamp(30px,4vw,44px);
+    line-height: 1.15;
+}
+
+.section-heading p {
+    margin: 0;
+    color: #657083;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.investment-products {
+    width: min(1150px,90%);
+    margin: auto;
+    padding: 30px 0 100px;
+}
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.products-header h2 {
+    margin: 8px 0 0;
+    font-size: 36px;
+}
+
+.products-header > p {
+    max-width: 430px;
+    margin: 0;
+    color: #697386;
+    line-height: 1.7;
 }
 
 .investment-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 22px;
 }
 
-.card {
-  background: #f5f9ff;
-  padding: 25px;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+.investment-card {
+    padding: 28px;
+    background: #fff;
+    border: 1px solid #e7ebf1;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(24,45,75,.05);
+    transition: .3s ease;
 }
 
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+.investment-card:hover {
+    transform: translateY(-7px);
+    border-color: #9edcff;
+    box-shadow: 0 18px 40px rgba(18,73,110,.12);
 }
 
-.card h3 {
-  color: #2f80ed;
-  margin-bottom: 12px;
-  font-size: 20px;
+.card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
 }
 
-.card p {
-  font-size: 15px;
-  color: #333;
-  margin-bottom: 8px;
+.investment-icon {
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    background: #edf8ff;
+    border-radius: 12px;
+    font-size: 25px;
+}
+
+.risk-badge {
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: #eef7f1;
+    color: #25804b;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.product-category {
+    color: #8a94a5;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.investment-card h3 {
+    margin: 8px 0 12px;
+    font-size: 21px;
+}
+
+.product-description {
+    min-height: 72px;
+    margin: 0 0 20px;
+    color: #687386;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px 0;
+    border-top: 1px solid #edf0f4;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #4e5b6e;
+    font-size: 13px;
+}
+
+.check {
+    color: #0784c9;
+    font-weight: 800;
+}
+
+.learn-more {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0 0;
+    background: transparent;
+    border: 0;
+    border-top: 1px solid #edf0f4;
+    color: #0879bd;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.learn-more span {
+    transition: .2s ease;
+}
+
+.learn-more:hover span {
+    transform: translateX(5px);
+}
+
+.investment-benefits {
+    padding: 90px 5%;
+    background: #062947;
+}
+
+.section-heading.light > span {
+    color: #67caff;
+}
+
+.section-heading.light h2 {
+    color: #fff;
+}
+
+.section-heading.light p {
+    color: rgba(255,255,255,.68);
+}
+
+.benefits-grid {
+    width: min(1150px,100%);
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.benefit-card {
+    padding: 28px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 12px;
+    background: rgba(255,255,255,.04);
+}
+
+.benefit-icon {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.benefit-card h3 {
+    margin: 0 0 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.benefit-card p {
+    margin: 0;
+    color: rgba(255,255,255,.65);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.investment-guidance {
+    width: min(1150px,90%);
+    margin: auto;
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 1.4fr .8fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.guidance-content > span {
+    color: #0879bd;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.guidance-content h2 {
+    margin: 12px 0 18px;
+    font-size: 42px;
+}
+
+.guidance-content > p {
+    max-width: 650px;
+    color: #687386;
+    line-height: 1.8;
+}
+
+.guidance-points {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.guidance-points div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #e9edf3;
+    border-radius: 9px;
+}
+
+.guidance-points strong {
+    color: #0879bd;
+    font-size: 13px;
+}
+
+.guidance-points span {
+    color: #455267;
+    font-size: 14px;
+}
+
+.guidance-box {
+    padding: 35px;
+    background: #eaf7ff;
+    border: 1px solid #ccecff;
+    border-radius: 15px;
+}
+
+.guidance-box-icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.guidance-box h3 {
+    margin: 0 0 10px;
+    font-size: 23px;
+}
+
+.guidance-box p {
+    color: #637083;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.guidance-box button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: #0879bd;
+    color: #fff;
+    border: 0;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.investment-disclaimer {
+    padding: 30px 5%;
+    background: #eef1f5;
+    color: #687386;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.investment-disclaimer strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #354155;
+}
+
+.investment-disclaimer p {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+    .investment-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .investment-guidance {
+        grid-template-columns: 1fr;
+    }
+
+    .products-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .investment-hero {
+        min-height: 580px;
+    }
+
+    .investment-hero-content {
+        padding: 60px 0;
+    }
+
+    .investment-hero h1 {
+        font-size: 43px;
+    }
+
+    .investment-hero p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+
+    .investment-intro {
+        padding: 65px 20px 40px;
+    }
+
+    .investment-products {
+        padding-bottom: 70px;
+    }
+
+    .investment-grid,
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .products-header h2 {
+        font-size: 29px;
+    }
+
+    .investment-guidance {
+        padding: 70px 0;
+    }
+
+    .guidance-content h2 {
+        font-size: 32px;
+    }
+
+    .guidance-box {
+        padding: 25px;
+    }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import'./Footer.css'
+import Link from "next/link"
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
@@ -7,7 +8,7 @@ const Footer = () => {
     <div className="footer-container">
       <div className='footer-head-1'>
         <div id='box-1'>
-          <h3>About Us</h3>
+          <Link href='./About'><h3>About Us</h3></Link>
           <p>Trusted banking partner providing secure deposits, loans, and financial solutions since 1990.</p>
         </div>
         <div id='box-2'>

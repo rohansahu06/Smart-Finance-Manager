@@ -1,62 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .education-loan-page {
-  background: linear-gradient(135deg, #e0f7fa, #ffffff); 
-  color: #333;
-  padding: 40px;
-  border-radius: 12px;
-  font-family: 'Segoe UI', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    color: #333;
+    padding: 40px;
+    border-radius: 12px;
+    font-family: "Segoe UI", sans-serif;
 }
-
 .education-loan-page h1 {
-  color: #2f80ed; /* Calm blue heading */
-  margin-bottom: 20px;
-  text-align: center;
+    margin-bottom: 20px;
+    color: #2f80ed;
+    text-align: center;
 }
-
 .intro {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 18px;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
 }
-
 .section {
-  margin-bottom: 25px;
+    max-width: 1100px;
+    margin: 0 auto 25px;
 }
-
 .section h2 {
-  color: #2f80ed;
-  margin-bottom: 10px;
+    margin-bottom: 10px;
+    color: #2f80ed;
 }
-
 .section ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
-
 .section ul li {
-  background: rgba(47,128,237,0.1); 
-  margin: 8px 0;
-  padding: 10px;
-  border-radius: 8px;
+    margin: 8px 0;
+    padding: 10px;
+    background: rgba(47,128,237,0.1);
+    border-radius: 8px;
+    line-height: 1.5;
 }
-
 .highlight-box {
-  background: #f0f8ff; 
-  color: #333;
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 20px;
-  text-align: center;
-  font-weight: bold;
+    max-width: 900px;
+    margin: 20px auto 0;
+    padding: 20px;
+    background: #f0f8ff;
+    color: #333;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.6;
 }
-#loan_request{
-  margin-left: 1000px;
-  margin-bottom: 20px;
-  padding: 12px;
-  background: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s;
+#loan_request {
+    display: block;
+    width: min(100%, 220px);
+    margin: 20px 0 20px auto;
+    padding: 12px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+#loan_request:hover {
+    background: #0056b3;
+}
+@media (max-width: 768px) {
+    .education-loan-page {
+        padding: 30px 20px;
+    }
+    .education-loan-page h1 {
+        font-size: 28px;
+    }
+    .intro {
+        font-size: 16px;
+    }
+    .section h2 {
+        font-size: 22px;
+    }
+    #loan_request {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+@media (max-width: 480px) {
+    .education-loan-page {
+        padding: 25px 15px;
+        border-radius: 8px;
+    }
+    .education-loan-page h1 {
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+    .intro {
+        margin-bottom: 22px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .section {
+        margin-bottom: 20px;
+    }
+    .section h2 {
+        font-size: 20px;
+    }
+    .section ul li {
+        padding: 9px;
+        font-size: 14px;
+    }
+    .highlight-box {
+        padding: 16px;
+        font-size: 14px;
+    }
+    #loan_request {
+        padding: 11px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 340px) {
+    .education-loan-page {
+        padding: 20px 10px;
+    }
+    .education-loan-page h1 {
+        font-size: 21px;
+    }
+    .section h2 {
+        font-size: 18px;
+    }
 }
