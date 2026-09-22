@@ -1,14 +1,17 @@
 {
-  "name": "payzen_bank",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "concurrently \"next dev\" \"nodemon src/app/server.js\"",
-    "build": "next build",
-    "start": "next start",
-    "export": "next export",
-    "lint": "eslint"
-  },
+    "name": "payzen_bank",
+    "version": "0.1.0",
+    "private": true,
+    "engines": {
+        "node": "22.x"
+    },
+    "scripts": {
+        "dev": "concurrently \"next dev\" \"nodemon src/app/server.js\"",
+        "build": "next build",
+        "start": "next start",
+        "export": "next export",
+        "lint": "eslint"
+    },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.3.1",
     "bcryptjs": "^3.0.2",
