@@ -1,28 +1,19 @@
-const nodemailer = require("nodemailer");
-
-const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 587,
-    secure: false,
-    requireTLS: true,
-    auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
-    },
-    connectionTimeout: 30000,
-    greetingTimeout: 30000,
-    socketTimeout: 60000
-});
+const { Resend } = require("resend");
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 const sendOTPEmail = async (email, otp) => {
     try {
-        await transporter.sendMail({
-            from: process.env.EMAIL_USER,
-            to: email,
+        const { data, error } = await resend.emails.send({
+            from: "PayZen Bank <onboarding@resend.dev>",
+            to: [email],
             subject: "PayZen Bank - OTP Verification",
             text: `PayZen Bank Project OTP is ${otp}. This OTP is valid for 5 minutes.`
         });
-        console.log(`✅ OTP sent to ${email}`);
+        if (error) {
+            console.error("❌ Resend Error:", error);
+            throw new Error(error.message || "Email sending failed");
+        }
+        console.log(`✅ OTP sent to ${email}`, data?.id || "");
     } catch (error) {
         console.error("❌ Failed to send OTP:", error.message);
         throw error;
