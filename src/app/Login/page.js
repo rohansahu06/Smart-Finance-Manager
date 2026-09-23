@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import "./Login.css";
-
+const API_URL = "https://smart-finance-manager-c55t.onrender.com";
 export default function LoginPage() {
     const router = useRouter();
     const [showPassword, setShowPassword] = useState(false);
@@ -14,12 +14,11 @@ export default function LoginPage() {
     const [showOTP, setShowOTP] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const [isLoginMode, setIsLoginMode] = useState(false);
-
     const handleRegister = async (e) => {
         e.preventDefault();
         setIsLoading(true);
         try {
-            const response = await fetch("http://localhost:5000/api/auth/register", {
+            const response = await fetch(`${API_URL}/api/auth/register`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -45,7 +44,6 @@ export default function LoginPage() {
         }
         setIsLoading(false);
     };
-
     const handleLogin = async (e) => {
         e.preventDefault();
         if (!email || !password) {
@@ -54,7 +52,7 @@ export default function LoginPage() {
         }
         setIsLoading(true);
         try {
-            const response = await fetch("http://localhost:5000/api/auth/login", {
+            const response = await fetch(`${API_URL}/api/auth/login`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -82,7 +80,7 @@ export default function LoginPage() {
                 setIsLoading(false);
                 return;
             }
-            const otpResponse = await fetch("http://localhost:5000/api/otp/send", {
+            const otpResponse = await fetch(`${API_URL}/api/otp/send`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -105,7 +103,6 @@ export default function LoginPage() {
         }
         setIsLoading(false);
     };
-
     const handleVerifyOTP = async (e) => {
         e.preventDefault();
         if (!otp || otp.length !== 6) {
@@ -115,8 +112,8 @@ export default function LoginPage() {
         setIsLoading(true);
         try {
             const verifyURL = isLoginMode
-                ? "http://localhost:5000/api/otp/verify"
-                : "http://localhost:5000/api/auth/verify-register";
+                ? `${API_URL}/api/otp/verify`
+                : `${API_URL}/api/auth/verify-register`;
             const response = await fetch(verifyURL, {
                 method: "POST",
                 headers: {
@@ -163,11 +160,9 @@ export default function LoginPage() {
         }
         setIsLoading(false);
     };
-
     const handleGoogleLogin = () => {
-        window.location.href = "http://localhost:5000/api/auth/google";
+        window.location.href = `${API_URL}/api/auth/google`;
     };
-
     const switchMode = () => {
         setIsLoginMode(!isLoginMode);
         setShowOTP(false);
@@ -177,7 +172,6 @@ export default function LoginPage() {
         setPassword("");
         setOtp("");
     };
-
     return (
         <div className="login-container">
             <h2 id="Heading">Access made easy, security made strong</h2>
